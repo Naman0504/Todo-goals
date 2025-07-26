@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: monospace;
+}
+
+body {
+  background-color: #ffb685;
+}
+
+.Title {
+  color: rgb(15, 15, 15);
+  text-align: center;
+  margin: auto;
+  font-size: 55px;
+}
+.Title span {
+  color: #ff5804;
+  /* filter: drop-shadow(rgba(241, 94, 8, 0.2)); */
+}
+.app-container {
+  padding: 20px 30px;
+  margin-inline: auto;
+  max-width: 700px;
+  background-color: #f6f6f6;
+  border-radius: 15px;
+}
+
+.progress-bar{
+ background-color: black;
+ height: 20px;
+ position: relative;
+ margin-top: 10px;
+ border-radius: 15px;
+}
+.progress-bar span{
+position: absolute;
+color: white;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+}
+.progress-bar-inside{
+ background-color: #fa6419;
+ height: 100%;
+ width: 30%;
+ /* margin-top: 10px; */
+ border-radius: 15px;
+}
+
+.error{
+background-color: rgb(255, 221, 208);
+padding: 2px 5px;
+border-radius: 5px;
+color: red;
+width: fit-content;
+font-size: 13px;
+margin-top: 6px;
+}
+
+.input-field{
+    margin-top: 18px;
+    /* padding: 5px; */
+    width: 100%;
+    background-color: rgb(231, 228, 228);
+    height: 38px;
+    display: flex;
+}
+
+.input-field input{
+    width: 90%;
+    height: 100%;
+    border: none;
+    color: #f75709;
+    background-color: transparent;
+    outline: none;
+    padding: 10px;
+    font-size: 15px;
+}
+.input-field button{
+    width: 10%;
+    height: 100%;
+    border: none;
+    color: #f75709;
+   background-color: black;
+   transition: all 0.5s ease;
+}
+.input-field button:hover{
+    
+   background-color: rgba(14, 13, 13, 0.842);
+}
+.input-field button:hover span{
+    transform: scale(1.5)
+}
+.input-field span{
+font-size: 23px;
+font-weight: 800;
+}
