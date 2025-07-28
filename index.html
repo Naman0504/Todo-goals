@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 
 </head>
 <body>
@@ -14,22 +15,27 @@
         <div class="app-container">
             <h2>Today's Goal</h2>
             <div class="progress-bar">
-                <span>100%</span>
+                <span class="progress-number">0 %</span>
                 <div class="progress-bar-inside">
 
                 </div>
 
             </div>
-            <p class="error">please complete the goals</p>
 
             <div class="input-field">
-                <input type="text" name="" id="">
-                <button><span>+</span></button>
+                <input type="text" placeholder="Enter your Goal" id="input-val">
+                <button id="btn"><span>+</span></button>
             </div>
+            
+            <p class="error">please complete the goals</p>
+            
+            <div class="goal-list">
+
+            </div>
+
             
         </div>
 
     </main>
-    
 </body>
 </html>

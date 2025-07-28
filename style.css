@@ -7,6 +7,10 @@
 
 body {
   background-color: #ffb685;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
 }
 
 .Title {
@@ -44,9 +48,10 @@ transform: translate(-50%, -50%);
 .progress-bar-inside{
  background-color: #fa6419;
  height: 100%;
- width: 30%;
+ width: 0%;
  /* margin-top: 10px; */
  border-radius: 15px;
+ transition: width 3s ease-in-out;
 }
 
 .error{
@@ -96,4 +101,60 @@ margin-top: 6px;
 .input-field span{
 font-size: 23px;
 font-weight: 800;
+}
+
+
+.goal-container{
+    /* height: 1px; */
+    width: 100%;
+    padding:20px 15px;
+    display: flex;
+   
+    background-color: white;
+    box-shadow:0px 1px 1px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    color: #f75709;
+    font-size: 16px;
+    font-weight: 700;
+
+    margin: 18px 0;
+    /* box-shadow: #b96c45; */
+    border: 1px solid red;
+    justify-content: space-between;
+
+}
+.goal-container .goal-desc{
+    /* height: 1px; */
+    width: 100%;
+    
+    align-items: center;
+    display: flex;
+     gap: 16px;
+
+}
+.goal-container button{
+    padding: 8px;
+    background-color: #f75709;
+    color: black;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+
+}
+
+.goal-checkbox{
+    height: 18px;
+    width: 18px;
+    border: 0.5px solid rgb(219, 218, 218);
+    border-radius: 50%;
+}
+.checked{ 
+    background-color: #f75709;
+}
+
+
+.completed{
+  text-decoration: line-through;
+  opacity: 0.6;
+  /* background: #000; */
 }
